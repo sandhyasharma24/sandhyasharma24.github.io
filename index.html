@@ -7,70 +7,69 @@
 
 <style>
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background: #f4f6f8;
-    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
     line-height: 1.6;
 }
 
 .container {
-    width: 85%;
+    width: 90%;
     max-width: 1000px;
     margin: auto;
-    padding: 20px;
-}
-
-header {
-    text-align: center;
     padding: 40px 0;
 }
 
-header h1 {
-    margin-bottom: 5px;
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    border-bottom: 2px solid #38bdf8;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    text-align: center;
+}
+
+.contact {
+    margin-top: 10px;
 }
 
 .contact a {
     margin: 0 10px;
-    text-decoration: none;
-    color: #0077cc;
-    font-weight: bold;
 }
 
-section {
-    margin-top: 40px;
-}
-
-h2 {
-    border-bottom: 2px solid #0077cc;
-    padding-bottom: 5px;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-.project {
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 8px;
     margin-bottom: 20px;
 }
 
-.tech {
-    font-style: italic;
-    color: #555;
-}
-
 button {
-    background: #0077cc;
-    color: white;
+    background: #38bdf8;
     border: none;
-    padding: 10px 18px;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 6px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 button:hover {
-    background: #005fa3;
+    background: #0ea5e9;
 }
 </style>
 </head>
@@ -79,107 +78,90 @@ button:hover {
 
 <div class="container">
 
-<header>
+<div class="header">
     <h1>Sandhya Sharma</h1>
-    <p>Backend Developer | AI Enthusiast | Computer Vision Intern</p>
+    <p>Backend Developer | AI Engineer | Computer Vision Intern</p>
     <div class="contact">
         <a href="https://linkedin.com/in/sandhyasharma24" target="_blank">LinkedIn</a>
         <a href="https://github.com/sandhyasharma24" target="_blank">GitHub</a>
         <a href="mailto:sandhya24102001@gmail.com">Email</a>
-        <a href="tel:+917905787985">Mobile</a>
+        <a href="tel:+917905787985">+91-7905787985</a>
     </div>
-</header>
-
-<section>
-<h2>Skills</h2>
-<p><strong>Programming:</strong> C++, Java, Python, HTML, CSS</p>
-<p><strong>Backend:</strong> Spring Boot, REST APIs, Spring Data JPA, Spring Security</p>
-<p><strong>Tools:</strong> Git, GitHub, GitHub Actions, Docker, Postman</p>
-<p><strong>Practices:</strong> RESTful Design, MVC, CI/CD, Microservices</p>
-<p><strong>Databases:</strong> MySQL, PostgreSQL</p>
-<p><strong>Soft Skills:</strong> Problem Solving, Team Collaboration, Adaptability</p>
-</section>
-
-<section>
-<h2>Internship</h2>
-
-<div class="project">
-<h3>CVFrameiq — Computer Vision Intern (Nov 2025 – Present)</h3>
-<ul>
-<li>Built scalable computer vision pipelines for production systems.</li>
-<li>Integrated object detection and tracking models.</li>
-<li>Optimized performance bottlenecks and improved deployment workflows.</li>
-</ul>
-<p class="tech">Tech: Python, FastAPI, OpenCV, Git, Linux</p>
 </div>
 
-<div class="project">
-<h3>Moonpreneur — Project Guide (July 2025 – Sept 2025)</h3>
-<ul>
-<li>Mentored students in AI & software projects.</li>
-<li>Led debugging, code reviews and project planning sessions.</li>
-<li>Worked with IoT, robotics, and embedded systems.</li>
-</ul>
-<p class="tech">Tech: Python, Arduino, Raspberry Pi, IoT Sensors</p>
+<h2>Technical Skills</h2>
+<div class="card">
+<strong>Programming:</strong> C++, Java, Python, HTML, CSS <br>
+<strong>Backend:</strong> Spring Boot, REST APIs, Spring Data JPA, Spring Security <br>
+<strong>Tools:</strong> Git, GitHub Actions, Docker, Postman <br>
+<strong>Databases:</strong> MySQL, PostgreSQL <br>
+<strong>Architecture:</strong> MVC, Microservices, CI/CD Pipelines
 </div>
 
-</section>
+<h2>Experience</h2>
 
-<section>
+<div class="card">
+<h3>Computer Vision Intern — CVFrameiq (Nov 2025 – Present)</h3>
+<ul>
+<li>Contributed to scalable backend services supporting CV pipelines.</li>
+<li>Integrated object detection & tracking into production workflows.</li>
+<li>Optimized performance bottlenecks in deployment pipelines.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Project Guide — Moonpreneur (July 2025 – Sept 2025)</h3>
+<ul>
+<li>Mentored students in AI & software development projects.</li>
+<li>Led debugging, architecture improvements & code reviews.</li>
+<li>Worked with IoT systems and embedded platforms.</li>
+</ul>
+</div>
+
 <h2>Projects</h2>
 
-<div class="project">
+<div class="card">
 <h3>API Contract Monitoring Platform (Jan 2026)</h3>
 <ul>
-<li>Tracked OpenAPI changes across 10+ microservices.</li>
+<li>Tracked breaking/non-breaking changes across 10+ microservices.</li>
 <li>Reduced false alerts by 70% using JSON normalization + SHA-256 hashing.</li>
-<li>Built rule-based contract change detection engine.</li>
 <li>Automated monitoring & reduced consumer failures by 60%.</li>
 </ul>
-<p class="tech">Java, Spring Boot, PostgreSQL, OpenAPI, Swagger</p>
 </div>
 
-<div class="project">
+<div class="card">
 <h3>Event Driven Notification Service (Nov 2025)</h3>
 <ul>
-<li>Processed 1,000+ events/day using asynchronous architecture.</li>
-<li>Implemented idempotency-key strategy (100% duplicate prevention).</li>
-<li>Designed state-machine lifecycle (10k+ transitions).</li>
-<li>Built Admin dashboard for monitoring & retries.</li>
+<li>Processed 1,000+ concurrent events/day.</li>
+<li>Implemented 100% idempotency duplicate prevention.</li>
+<li>Designed lifecycle state machine with 10k+ transitions.</li>
 </ul>
-<p class="tech">Java 21, Spring Boot, PostgreSQL, React.js</p>
 </div>
 
-</section>
-
-<section>
-<h2>Certifications</h2>
-<ul>
-<li>Cloud Computing — NPTEL (May 2025)</li>
-<li>Introduction to Large Language Models — Google Cloud (Feb 2024)</li>
-</ul>
-</section>
-
-<section>
 <h2>Achievements</h2>
-<ul>
-<li>Top 30 — Dr. Code Hackathon (430+ participants)</li>
-</ul>
-</section>
+<div class="card">
+Top 30 — Dr. Code Hackathon (430+ participants)
+</div>
 
-<section>
 <h2>Education</h2>
-<p><strong>B.Tech CSE</strong> — Lovely Professional University (2022 – Present) | CGPA: 7.24</p>
-<p><strong>Intermediate</strong> — Scholar's Senior Secondary School (66%)</p>
-<p><strong>Matriculation</strong> — Scholar's Senior Secondary School (88%)</p>
-</section>
+<div class="card">
+B.Tech CSE — Lovely Professional University (CGPA: 7.24) <br>
+Intermediate — 66% <br>
+Matriculation — 88%
+</div>
 
-<section style="text-align:center; margin-top:40px;">
-<a href="Sandhya_Sharma_Resume.pdf" target="_blank">
-<button>Download Resume (PDF)</button>
-</a>
-</section>
+<h2>Download Resume</h2>
+<div class="card" style="text-align:center;">
+    <a href="sandhya_specialed_cv.pdf" target="_blank">
+        <button>Specialized AI Resume</button>
+    </a>
+    <br><br>
+    <a href="sandhya_updated_cv.pdf" target="_blank">
+        <button>Backend Developer Resume</button>
+    </a>
+</div>
 
 </div>
+
 </body>
 </html>
